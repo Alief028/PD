@@ -118,7 +118,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#welcome-to-mkdocs" tabindex="1" class="md-skip">
+      <a href="#statistik-deskriptif" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -282,16 +282,71 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
+  <a href="#baca-data" class="md-nav__link">
+    Baca Data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deskripsi-kolom" class="md-nav__link">
+    Deskripsi Kolom
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
+        
+          <li class="md-nav__item">
+  <a href="#mean" class="md-nav__link">
+    Mean
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#median" class="md-nav__link">
+    Median
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#range" class="md-nav__link">
+    Range
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quantile" class="md-nav__link">
+    Quantile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variance" class="md-nav__link">
+    Variance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standar-deviasi" class="md-nav__link">
+    Standar Deviasi
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    Summary
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -339,16 +394,71 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
+  <a href="#baca-data" class="md-nav__link">
+    Baca Data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deskripsi-kolom" class="md-nav__link">
+    Deskripsi Kolom
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
+        
+          <li class="md-nav__item">
+  <a href="#mean" class="md-nav__link">
+    Mean
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#median" class="md-nav__link">
+    Median
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#range" class="md-nav__link">
+    Range
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quantile" class="md-nav__link">
+    Quantile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variance" class="md-nav__link">
+    Variance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standar-deviasi" class="md-nav__link">
+    Standar Deviasi
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    Summary
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -371,21 +481,153 @@
                   <a href="https://github.com/Alief028/edit/master/docs/index.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="welcome-to-mkdocs">Welcome to MkDocs<a class="headerlink" href="#welcome-to-mkdocs" title="Permanent link">&para;</a></h1>
-<p>For full documentation visit <a href="https://mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs help</code> - Print this help message.</li>
-</ul>
-<h2 id="project-layout">Project layout<a class="headerlink" href="#project-layout" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
+                <h1 id="statistik-deskriptif">Statistik Deskriptif<a class="headerlink" href="#statistik-deskriptif" title="Permanent link">&para;</a></h1>
+<p>Setiap kelompok data numerik mempunyai properti tersendiri yang menjelaskan secara unik data tersebut:</p>
+<p>Sebelum mulai, mari kita mengambil beberapa sampel data</p>
+<h2 id="baca-data">Baca Data<a class="headerlink" href="#baca-data" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data_penjualan1.csv&quot;</span><span class="p">)</span>
+<span class="n">df</span>
 </pre></div>
+
+
+<h3 id="deskripsi-kolom">Deskripsi Kolom<a class="headerlink" href="#deskripsi-kolom" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;harga&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>count       100.000000
+mean     214562.770000
+std       21792.270555
+min      175450.000000
+25%      197264.250000
+50%      214659.500000
+75%      234184.500000
+max      249103.000000
+Name: harga, dtype: float64
+</pre></div>
+
+
+<h3 id="mean">Mean<a class="headerlink" href="#mean" title="Permanent link">&para;</a></h3>
+<p>Mean adalah rata-rata dari suatu dataset. Diperoleh dari sum dataset lalu dibagi dengan jumlah elemen dataset.</p>
+<div class="codehilite"><pre><span></span><span class="n">dc</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;harga&quot;</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Rata-rata&quot;</span><span class="p">,</span><span class="n">dc</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>Rata-rata 214562.77
+</pre></div>
+
+
+<h3 id="median">Median<a class="headerlink" href="#median" title="Permanent link">&para;</a></h3>
+<p>Median merupakan titik data yang paling baik apabila dataset telah diurutkan. Dalam data numerik non interval, data ke-(n-1)/2 adalah median jika n ganjil atau rata-rata dari data ke-(n/2) dan data ke-(n/2+1) jika n genap.</p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">statistics</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Median&quot;</span><span class="p">,</span><span class="n">dc</span><span class="o">.</span><span class="n">median</span><span class="p">())</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>Median 214659.5
+</pre></div>
+
+
+<h3 id="range">Range<a class="headerlink" href="#range" title="Permanent link">&para;</a></h3>
+<p>Range dalam suatu dataset ialah angka tertinggi dan angka terendah dalam dataset.</p>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Range&quot;</span><span class="p">,</span> <span class="n">dc</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="s2">&quot;, Max:&quot;</span><span class="p">,</span> <span class="n">dc</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="s2">&quot;Min:&quot;</span><span class="p">,</span> <span class="n">dc</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>Range [199646 217629 194895 243520 189647 231199 201023 237461 181524 209713
+ 196850 235810 210073 230566 191428 196716 180778 241827 235338 246301
+ 242698 227316 213416 248338 189835 229830 228902 188186 214059 212963
+ 178144 181112 221751 242167 197905 197365 215260 234018 217349 236345
+ 200676 243220 240486 228497 201558 187013 238585 248879 220055 179157
+ 218099 202469 196962 204666 220382 243236 231079 224545 204638 204997
+ 175450 208584 181341 177602 244126 175884 194168 209596 216842 232769
+ 242237 221570 234874 240559 186485 186471 204356 202393 194641 249103
+ 221927 231445 244795 224554 186151 199054 237222 176109 208126 213399
+ 193254 247786 233411 199631 234684 245464 232024 200812 198037 221239] , Max: 249103 Min: 175450
+</pre></div>
+
+
+<h3 id="quantile">Quantile<a class="headerlink" href="#quantile" title="Permanent link">&para;</a></h3>
+<p>Quantil adalah jarak data yang memisahkan data sekin persen dari yang terkecil hingga tertinggi. Quantil dipisah menjadi: + Q1 sebagai Quantil bawah (25%) + Q2 sebagai Quantil tengah (50%) + Q3 sebagai Quantil atas (75%)</p>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Quantil&quot;</span><span class="p">,</span> <span class="n">dc</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="s2">&quot;Q1:&quot;</span><span class="p">,</span> <span class="n">dc</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.25</span><span class="p">),</span> <span class="s2">&quot;Q2:&quot;</span><span class="p">,</span> <span class="n">dc</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.5</span><span class="p">),</span> <span class="s2">&quot;Q3:&quot;</span><span class="p">,</span> <span class="n">dc</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">))</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>Quantil [199646 217629 194895 243520 189647 231199 201023 237461 181524 209713
+ 196850 235810 210073 230566 191428 196716 180778 241827 235338 246301
+ 242698 227316 213416 248338 189835 229830 228902 188186 214059 212963
+ 178144 181112 221751 242167 197905 197365 215260 234018 217349 236345
+ 200676 243220 240486 228497 201558 187013 238585 248879 220055 179157
+ 218099 202469 196962 204666 220382 243236 231079 224545 204638 204997
+ 175450 208584 181341 177602 244126 175884 194168 209596 216842 232769
+ 242237 221570 234874 240559 186485 186471 204356 202393 194641 249103
+ 221927 231445 244795 224554 186151 199054 237222 176109 208126 213399
+ 193254 247786 233411 199631 234684 245464 232024 200812 198037 221239] Q1: 197264.25 Q2: 214659.5 Q3: 234184.5
+</pre></div>
+
+
+<h3 id="variance">Variance<a class="headerlink" href="#variance" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Variansi&quot;</span><span class="p">,</span> <span class="n">dc</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="s2">&quot;=&quot;</span><span class="p">,</span> <span class="n">dc</span><span class="o">.</span><span class="n">var</span><span class="p">())</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>Variansi [199646 217629 194895 243520 189647 231199 201023 237461 181524 209713
+ 196850 235810 210073 230566 191428 196716 180778 241827 235338 246301
+ 242698 227316 213416 248338 189835 229830 228902 188186 214059 212963
+ 178144 181112 221751 242167 197905 197365 215260 234018 217349 236345
+ 200676 243220 240486 228497 201558 187013 238585 248879 220055 179157
+ 218099 202469 196962 204666 220382 243236 231079 224545 204638 204997
+ 175450 208584 181341 177602 244126 175884 194168 209596 216842 232769
+ 242237 221570 234874 240559 186485 186471 204356 202393 194641 249103
+ 221927 231445 244795 224554 186151 199054 237222 176109 208126 213399
+ 193254 247786 233411 199631 234684 245464 232024 200812 198037 221239] = 474903055.9364648
+</pre></div>
+
+
+<h3 id="standar-deviasi">Standar Deviasi<a class="headerlink" href="#standar-deviasi" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Standar Deviasi&quot;</span><span class="p">,</span> <span class="n">dc</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="s2">&quot;=&quot;</span><span class="p">,</span> <span class="n">dc</span><span class="o">.</span><span class="n">std</span><span class="p">())</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>Standar Deviasi [199646 217629 194895 243520 189647 231199 201023 237461 181524 209713
+ 196850 235810 210073 230566 191428 196716 180778 241827 235338 246301
+ 242698 227316 213416 248338 189835 229830 228902 188186 214059 212963
+ 178144 181112 221751 242167 197905 197365 215260 234018 217349 236345
+ 200676 243220 240486 228497 201558 187013 238585 248879 220055 179157
+ 218099 202469 196962 204666 220382 243236 231079 224545 204638 204997
+ 175450 208584 181341 177602 244126 175884 194168 209596 216842 232769
+ 242237 221570 234874 240559 186485 186471 204356 202393 194641 249103
+ 221927 231445 244795 224554 186151 199054 237222 176109 208126 213399
+ 193254 247786 233411 199631 234684 245464 232024 200812 198037 221239] = 21792.27055486566
+</pre></div>
+
+
+<h3 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="n">adf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data_penjualan1.csv&#39;</span><span class="p">)</span>
+<span class="n">adata</span> <span class="o">=</span> <span class="p">[[</span><span class="n">x</span><span class="p">,</span> 
+    <span class="n">adf</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> 
+    <span class="n">adf</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span> 
+    <span class="n">adf</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> 
+    <span class="n">adf</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span>
+    <span class="n">adf</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.25</span><span class="p">),</span>
+    <span class="n">adf</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.5</span><span class="p">),</span> 
+    <span class="n">adf</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">),</span>
+    <span class="n">adf</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">skew</span><span class="p">(),</span>
+    <span class="n">adf</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">var</span><span class="p">(),</span>
+    <span class="n">adf</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">()]</span> 
+        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">adf</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
+
+<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">adata</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Nama Kolom&#39;</span><span class="p">,</span> <span class="s1">&#39;Mean&#39;</span><span class="p">,</span> <span class="s1">&#39;Median&#39;</span><span class="p">,</span> <span class="s1">&#39;Min&#39;</span><span class="p">,</span> <span class="s1">&#39;Max&#39;</span><span class="p">,</span> <span class="s1">&#39;Q1&#39;</span><span class="p">,</span> <span class="s1">&#39;Q2&#39;</span><span class="p">,</span> <span class="s1">&#39;Q3&#39;</span><span class="p">,</span> <span class="s1">&#39;Skew&#39;</span><span class="p">,</span> <span class="s1">&#39;Var&#39;</span><span class="p">,</span> <span class="s1">&#39;Std&#39;</span><span class="p">])</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>
+</pre></div>
+
+
+<p><img alt="1568901540940" src="1568901540940.png" /></p>
                 
                   
                 
